@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "603655544162",
+    "project_id": "safar-d2298",
+    "storage_bucket": "safar-d2298.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:603655544162:android:295eb92590aabc933ae03b",
+        "android_client_info": {
+          "package_name": "com.example.safar"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3kLSpIdRbRUtesh65Ctki-SWOFk4tUvo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

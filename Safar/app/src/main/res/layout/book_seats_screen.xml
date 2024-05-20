@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Header with a title and timer -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp">
+
+        <!-- Back Navigation and Timer can be placed here -->
+        <ImageView
+            android:id="@+id/backArrow"
+            android:layout_width="44dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/back_arrow_background" />
+        <!-- Title -->
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Seat"
+            android:textSize="24sp"
+            android:layout_marginLeft="120dp"
+            />
+
+        <!-- Timer -->
+        <TextView
+            android:id="@+id/textViewTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewTitle"
+            android:layout_marginLeft="60dp"
+            android:text="The remaining time of order 00:07:20"
+            android:textColor="#D32F2F" />
+
+    </RelativeLayout>
+
+    <!-- Passenger Information Section -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/black_border"
+        android:padding="8dp"
+        android:layout_marginStart="90dp">
+
+        <!-- Passenger Name and Seat Details -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. Cameron Williamson\nEconomy · 8D"
+            android:drawableStart="@drawable/ic_account_circle"
+            android:layout_marginLeft="0dp"
+            android:drawablePadding="8dp"
+            android:padding="8dp"/>
+
+        <!-- This assumes ic_account_circle is a placeholder for the user icon -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="8dp">
+
+        <!-- Available Seat Icon and Text -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Available"
+            android:drawableStart="@drawable/ic_seatss"
+            android:drawablePadding="8dp"
+            android:padding="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selected"
+            android:drawableStart="@drawable/ic_seats_selected"
+            android:drawablePadding="8dp"
+            android:padding="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Filled"
+            android:drawableStart="@drawable/ic_seat_filled"
+            android:drawablePadding="8dp"
+            android:padding="8dp"/>
+
+        <!-- Selected Seat Icon and Text -->
+        <!-- Repeat the above TextView with changes for selected and filled -->
+
+    </LinearLayout>
+
+    <!-- Seating Chart Layout -->
+
+
+
+
+    <GridLayout
+        android:id="@+id/gridLayoutSeats"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:rowCount="10"
+        android:columnCount="4"
+        android:padding="16dp">
+
+        <!-- Empty view for offsetting the next row -->
+
+        <!-- Row 1, Seats A-E -->
+        <ImageView android:src="@drawable/ic_seatss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"/>
+
+        <ImageView android:src="@drawable/ic_seatss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"/>
+
+
+        <!-- Assume B and C are selected -->
+        <ImageView android:src="@drawable/ic_seats_selected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"/>
+
+        <ImageView android:src="@drawable/ic_seat_filled"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"/>
+        <!-- Seat Views Added Dynamically in Code -->
+
+
+        <!-- Row 1, Seats A-E -->
+        <ImageView android:src="@drawable/ic_seatss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"/>
+
+        <ImageView android:src="@drawable/ic_seatss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"/>
+
+
+
+        <!-- Assume B and C are selected -->
+        <ImageView android:src="@drawable/ic_seats_selected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"/>
+
+        <ImageView android:src="@drawable/ic_seat_filled"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"/>
+
+        <!-- Row 1, Seats A-E -->
+        <ImageView android:src="@drawable/ic_seatss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"/>
+
+        <ImageView android:src="@drawable/ic_seatss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"/>
+
+
+
+        <!-- Assume B and C are selected -->
+        <ImageView android:src="@drawable/ic_seatss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"/>
+
+        <ImageView android:src="@drawable/ic_seatss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"/>
+
+        <!-- Row 1, Seats A-E -->
+        <ImageView android:src="@drawable/ic_seatss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"/>
+
+        <ImageView android:src="@drawable/ic_seatss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"/>
+
+
+
+        <!-- Assume B and C are selected -->
+        <ImageView android:src="@drawable/ic_seats_selected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"/>
+
+        <ImageView android:src="@drawable/ic_seatss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"/>
+
+
+
+    </GridLayout>
+
+
+    <!-- Button to Confirm Seat Selection -->
+    <Button
+        android:id="@+id/buttonSelectSeats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SELECT SEATS"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_corners"
+        android:textColor="@android:color/white"/>
+
+</LinearLayout>

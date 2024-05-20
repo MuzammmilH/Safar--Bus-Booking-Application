@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Back arrow -->
+    <ImageView
+        android:id="@+id/backArrow"
+        android:layout_width="44dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/back_arrow_background" />
+
+    <!-- Verification heading -->
+
+    <!-- Message about sending verification code -->
+    <TextView
+        android:id="@+id/verificationHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/backArrow"
+        android:textStyle="bold"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="53dp"
+        android:text="Verification"
+        android:textColor="#101a5b"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/sentMessageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="We've sent you the verification code on +(123) 456-7890"
+        android:layout_below="@id/verificationHeading"
+        android:layout_marginStart="18dp"
+        android:textColor="#101a5b"
+        android:layout_marginTop="16dp"/>
+
+    <!-- OTP input boxes -->
+
+    <!-- Continue button -->
+
+    <!-- Re-send code message -->
+
+    <LinearLayout
+        android:id="@+id/otpInputLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sentMessageTextView"
+        android:layout_marginTop="17dp"
+        android:orientation="horizontal">
+
+        <!-- Four rounded rectangle OTP input boxes -->
+        <EditText
+            android:id="@+id/otpBox1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="105dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/otp_boxes"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1" />
+
+        <EditText
+            android:id="@+id/otpBox2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/otp_boxes"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:inputType="number"
+            android:maxLength="1" />
+
+        <EditText
+            android:id="@+id/otpBox3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/otp_boxes"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1" />
+
+        <EditText
+            android:id="@+id/otpBox4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/otp_boxes"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/continueButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/otpInputLayout"
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="72dp"
+        android:background="@drawable/rounded_button"
+        android:text="Continue" />
+
+    <TextView
+        android:id="@+id/resendMessageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/continueButton"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="33dp"
+        android:text="Re-send code in 00:20"
+        android:textColor="#101a5b" />
+
+</RelativeLayout>

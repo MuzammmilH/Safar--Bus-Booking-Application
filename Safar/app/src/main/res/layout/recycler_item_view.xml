@@ -1,0 +1,189 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:backgroundTint="#dedede"
+    android:background="@drawable/black_border">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+android:backgroundTint="#eaeaea"
+    android:background="@drawable/rounded_rectangle">
+
+    <!-- First Line: Bus Name and Seats Left -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:backgroundTint="#edeef2"
+        android:gravity="start"
+        android:background="@drawable/black_border">
+
+<ImageView
+    android:layout_width="80dp"
+    android:layout_height="80dp"
+    android:src="@mipmap/ic_launcher_round">
+
+</ImageView>
+        <!-- Bus Name -->
+        <TextView
+            android:id="@+id/busNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seats Left"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="120dp"/>
+        <!-- Seats Left with AC indication -->
+        <TextView
+            android:id="@+id/seatsLeftButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seats Left"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="170dp"/>
+
+    </LinearLayout>
+
+    <!-- Second Line: Departure Time, Travel Time, Arrival Time -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:backgroundTint="#edeef2"
+        android:gravity="start"
+        android:background="@drawable/black_border"
+        >
+
+        <!-- Time of Departure -->
+        <TextView
+            android:id="@+id/departureTimeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="|--------"
+            android:textColor="#000000"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="15dp"/>
+
+
+
+
+        <!-- Travel Time -->
+        <TextView
+            android:id="@+id/travelTimeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="--------|"
+            android:textColor="#000000"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="15dp"/>
+        <!-- Time of Arrival -->
+        <TextView
+            android:id="@+id/arrivalTimeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="15dp"/>
+
+    </LinearLayout>
+
+    <!-- Third Line: Departure Place Name and Arrival Place Name -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="start"
+        android:backgroundTint="#edeef2"
+        android:paddingBottom="10dp"
+        android:background="@drawable/bottom_rounded">
+
+        <!-- Departure Place Name -->
+        <TextView
+            android:id="@+id/departurePlaceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#454545"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"/>
+
+        <!-- Arrival Place Name -->
+        <TextView
+            android:id="@+id/arrivalPlaceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#454545"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="160dp"/>
+
+    </LinearLayout>
+
+    <!-- Fourth Line: One Way Info and Price -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:padding="16dp"
+        android:backgroundTint="#edeef2"
+        android:background="@drawable/rounded_rectangle"
+        android:layout_marginTop="16dp"
+        >
+
+        <!-- One Way Text -->
+        <TextView
+            android:id="@+id/oneWayTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_gravity="center_vertical"/>
+
+        <!-- Price -->
+        <TextView
+            android:id="@+id/priceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_marginStart="16dp"/>
+    </LinearLayout>
+
+</LinearLayout>
+
+</FrameLayout>

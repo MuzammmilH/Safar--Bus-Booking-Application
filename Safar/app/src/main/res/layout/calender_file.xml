@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="20"
+    android:gravity="top"
+
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+
+            <ImageView
+                android:id="@+id/closeButton"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/blue_ic_cross"
+                android:layout_alignParentStart="true"/>
+
+
+            <TextView
+                android:id="@+id/headerText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="145dp"
+                android:text="Choose Date"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5.5"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="60dp"
+            android:backgroundTint="#5669ff"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/departureDateText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_selector"
+                android:padding="20dp"
+                android:text="Departure Date"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/returnDateText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/departureDateText"
+                android:background="@drawable/ic_selector"
+                android:paddingVertical="20dp"
+                android:paddingHorizontal="30dp"
+                android:text="Add Return"
+                android:textColor="#FFFFFF"
+                android:layout_marginStart="8dp" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="14.8"
+            android:orientation="vertical">
+
+
+            <CalendarView
+                android:id="@+id/calendarView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff"
+                android:headerBackground="#5669ff"
+                android:focusedMonthDateColor="#5669ff"
+                android:selectedWeekBackgroundColor="#5669ff"
+                android:unfocusedMonthDateColor="#5669ff"
+                android:shownWeekCount="6" />
+
+
+        </LinearLayout>
+
+    <Button
+        android:id="@+id/confirmButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/rounded_corners"
+        android:text="CONFIRM"
+        android:textColor="#FFFFFF"
+        android:paddingVertical="16dp"
+        android:layout_margin="18dp"/>
+
+
+</LinearLayout>
+
+
+
+
+

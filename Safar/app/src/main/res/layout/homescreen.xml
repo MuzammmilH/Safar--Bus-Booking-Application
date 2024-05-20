@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:weightSum="20">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_weight="1"
+        android:background="#5669FF"
+        android:gravity="left|center"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/menu1"
+            android:layout_width="23dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="#ffffff"
+            android:background="@drawable/menu" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="15dp"
+            android:text="Saf"
+            android:textColor="#ffff"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="15dp"
+            android:text="ar"
+            android:textColor="#ffffff"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/notify1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="145dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/notify" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="208dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <!-- Poster Image -->
+        <ImageView
+            android:id="@+id/imageViewPoster"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="@mipmap/safar"
+            android:scaleType="centerCrop" />
+
+        <!-- Text Below Image -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Ready for the best safar? Let's begin the journey!"
+            android:textColor="#5669FF"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <!-- TextView for the name "Ammar" -->
+        <TextView
+            android:id="@+id/usernameTextView"
+            android:layout_width="160dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textAlignment="center"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:background="@drawable/oval"
+            android:text="Ammar Arshad"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:drawableLeft="@drawable/profile"
+        android:drawablePadding="10dp"
+        android:layout_weight="1"
+            tools:ignore="RtlCompat" />
+
+
+
+        <!-- TextView for the phone number -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:background="@drawable/oval"
+            android:text="03181805230"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:drawableLeft="@drawable/phone"
+        android:drawablePadding="10dp"
+        android:layout_weight="1"
+            tools:ignore="RtlCompat" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="162dp"
+        android:layout_weight="6"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <!-- Container for the first button and text -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="107dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"> <!-- Added some margin for spacing -->
+
+            <ImageButton
+                android:id="@+id/buyticketbtn"
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/roundedbutton"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/buyticket_foreground" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center_horizontal"
+
+                android:text="Buy Ticket"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Container for the second button and text -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="112dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"> <!-- Added some margin for spacing -->
+
+            <ImageButton
+                android:id="@+id/bookticketbtn"
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/roundedbutton"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/bookticket_foreground" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center_horizontal"
+
+                android:text="Book Ticket"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="162dp"
+        android:layout_weight="6"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <!-- Container for the first button and text -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="114dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"> <!-- Added some margin for spacing -->
+
+            <ImageButton
+                android:id="@+id/refundbtn"
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/roundedbutton"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/refund_foreground" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center_horizontal"
+
+                android:text="Refund"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Container for the second button and text -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="109dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"> <!-- Added some margin for spacing -->
+
+            <ImageButton
+                android:id="@+id/resetpass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:background="@drawable/ic_customer"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center_horizontal"
+
+                android:text="Customer Support"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="162dp"
+        android:layout_weight="6"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <!-- Container for the first button and text -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="114dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"> <!-- Added some margin for spacing -->
+
+            <ImageButton
+                android:id="@+id/feedbackbtn"
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/roundedbutton"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/feedback_foreground" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center_horizontal"
+
+                android:text="Feedback"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Container for the second button and text -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="112dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"> <!-- Added some margin for spacing -->
+
+            <ImageButton
+                android:id="@+id/popular_routesbtn"
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/roundedbutton"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/route_foreground" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center_horizontal"
+
+                android:text="Populer Routes"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+

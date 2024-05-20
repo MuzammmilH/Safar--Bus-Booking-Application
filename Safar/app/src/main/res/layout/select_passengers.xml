@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+
+    <!-- Close Button -->
+    <ImageButton
+        android:id="@+id/closeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_margin="16dp"
+        android:background="@android:color/transparent"
+        android:src="@android:drawable/ic_menu_close_clear_cancel" />
+
+    <!-- Select Passengers Text -->
+    <TextView
+        android:id="@+id/selectPassengersText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Select Passengers"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:textColor="#000000" />
+
+    <!-- Adults Column -->
+
+    <!-- Youth Column -->
+
+    <!-- Senior Column -->
+
+    <LinearLayout
+        android:id="@+id/adultsColumn"
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/selectPassengersText"
+        android:layout_gravity="center"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="45dp"
+        android:orientation="vertical">
+
+        <!-- Adults Label -->
+        <TextView
+            android:id="@+id/adultsLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adults"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/addAdultLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/minusAdultButton"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="250dp"
+                android:padding="4dp"
+                android:text="-"
+                android:textColor="@color/white"
+                android:background="#5669ff"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/AdultCountText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="0"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/plusAdultButton"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:padding="4dp"
+                android:text="+"
+                android:textColor="@color/white"
+                android:background="#5669ff"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/adultsAgeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="26 years"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/addAdultsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:background="@color/black"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Add Youth Button -->
+
+
+    <LinearLayout
+        android:id="@+id/youthColumn"
+        android:layout_width="373dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/selectPassengersText"
+        android:layout_marginStart="-365dp"
+        android:layout_marginTop="151dp"
+        android:layout_toEndOf="@id/adultsColumn"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <!-- Youth Label -->
+
+        <TextView
+            android:id="@+id/youthLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Youth"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/addYouthLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/minusYouthButton"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="250dp"
+                android:padding="4dp"
+                android:text="-"
+                android:background="#5669ff"
+                android:textSize="14sp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/youthCountText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="0"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/plusYouthButton"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:padding="4dp"
+                android:text="+"
+                android:background="#5669ff"
+                android:textSize="14sp"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+        <!-- Age Text -->
+
+        <TextView
+            android:id="@+id/youthAgeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0-25 years"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/seniorColumn"
+        android:layout_width="367dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/selectPassengersText"
+        android:layout_marginStart="-372dp"
+        android:layout_marginTop="258dp"
+        android:layout_toEndOf="@id/youthColumn"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <!-- Senior Label -->
+        <TextView
+            android:id="@+id/seniorLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Senior"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <!-- Age Text -->
+        <LinearLayout
+            android:id="@+id/addSeniorLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/minusSeniorButton"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="250dp"
+                android:padding="4dp"
+                android:text="-"
+                android:textSize="14sp"
+                android:background="#5669ff"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/seniorCountText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="0"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/plusSeniorButton"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:padding="4dp"
+                android:text="+"
+                android:textSize="14sp"
+                android:background="#5669ff"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/seniorAgeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="58+ years"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black"
+            android:orientation="vertical">
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="378dp"
+        android:layout_height="171dp"
+        android:layout_below="@id/seniorColumn"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <!-- Add Discount Text -->
+        <TextView
+            android:id="@+id/addDiscountText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Add Discount"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <!-- Rounded Rectangle EditText -->
+        <EditText
+            android:id="@+id/discountEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corners"
+            android:hint="Type here"
+            android:padding="12dp" />
+
+
+        <!-- Passengers Text -->
+
+        <Button
+            android:id="@+id/selectButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button"
+            android:padding="12dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="10dp"
+            android:text="Confirm Passengers"
+            android:textColor="@color/white"
+            android:textSize="16sp">
+
+        </Button>
+
+    </LinearLayout>
+
+
+    <!-- Button -->
+
+
+
+</RelativeLayout>
+

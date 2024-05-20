@@ -1,0 +1,81 @@
+<!-- activity_main.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="81dp"
+        android:background="@drawable/rectangle_blue"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <!-- Departure Location TextView -->
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="27dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/back_arrow_background"
+            android:contentDescription="Back Button" />
+
+        <TextView
+            android:id="@+id/departureLocationTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="8dp"
+            android:text="Departure Location"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <!-- Arrow icon -->
+        <TextView
+            android:id="@+id/arrowImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="9dp"
+            android:text="===>"
+            android:textColor="@color/white" />
+
+        <!-- Arrival Location TextView -->
+        <TextView
+            android:id="@+id/arrivalLocationTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="15dp"
+            android:text="Arrival Location"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <!-- LinearLayout with date and day TextView -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottom_rounded"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/dateAndDayTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="155dp"
+            android:text="Monday, April 13"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <!-- RecyclerView for displaying bus details -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

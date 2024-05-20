@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="20"
+    android:gravity="top"
+
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+
+        android:background="@drawable/bottom_rounded"
+        android:backgroundTint="#5669ff"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            >
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/arrow_back"
+                android:scaleType="center"
+                android:padding="8dp" />
+
+
+
+
+            <TextView
+                android:id="@+id/name_mentor_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                android:layout_marginStart="20dp"
+                android:text="Buy Pre Booked Tickets"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="25sp"
+                android:textStyle="bold"/>
+
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/chat_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rounded_rectangle"
+        android:backgroundTint="#5669ff"
+        android:elevation="6dp"
+        android:padding="8dp">
+
+
+
+
+
+        <!-- Text input field -->
+        <EditText
+            android:id="@+id/departure_edit_text"
+            android:layout_width="294dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:background="@drawable/rounded_rectangle"
+            android:hint="Enter Departure City.."
+            android:inputType="textMultiLine"
+            android:minHeight="48dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textColor="#000000" />
+
+
+
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="#5669ff"
+        android:elevation="6dp"
+        android:padding="8dp">
+
+
+
+
+
+        <!-- Text input field -->
+        <EditText
+            android:id="@+id/arrival_edit_text"
+            android:layout_width="294dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:background="@drawable/rounded_rectangle"
+            android:hint="Enter Arrival City.."
+            android:inputType="textMultiLine"
+            android:minHeight="48dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textColor="#000000" />
+
+
+
+
+    </RelativeLayout>
+
+
+
+    <Button
+        android:id="@+id/search_btn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/rounded_corners"
+        android:color="#5669FF"
+        android:textColor="#ffffff"
+        android:text="Search"  />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#127272"
+        android:gravity="center_vertical">
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>
+
+
+
