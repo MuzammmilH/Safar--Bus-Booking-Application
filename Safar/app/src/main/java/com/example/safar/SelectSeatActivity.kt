@@ -168,7 +168,7 @@ class SelectSeatActivity : AppCompatActivity() {
         val request = Request.Builder()
             .url("https://fcm.googleapis.com/fcm/send")
             .post(requestBody)
-            .addHeader("Authorization", "key=AAAAjIysnWI:APA91bGqY8b4qUOAlmLU9PJj9lPxApeK3h3QdluXVYgyIeAXha9rx9QRA1M65uIoHn99jP5OkzhXHL9q1CEb2zJ6yZQnBXMzfgUqOIuL1cO-62VomXNfZMCq8k2poIFsKszRIEziBAmW") // Replace YOUR_SERVER_KEY with your server key from Firebase Console
+            .addHeader("Authorization", "key=") // Replace YOUR_SERVER_KEY with your server key from Firebase Console
             .addHeader("Content-Type", "application/json")
             .build()
 
